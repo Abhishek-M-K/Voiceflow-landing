@@ -59,7 +59,7 @@ const precomponents: { title: string; description: string }[] = [
 export function NavigationMenuBar() {
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList className="hidden md:flex md:gap-x-4">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -103,7 +103,12 @@ export function NavigationMenuBar() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink>Documentation</NavigationMenuLink>
+            <NavigationMenuLink>Guidelines</NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/pricing" legacyBehavior passHref>
+            <NavigationMenuLink>Pricing</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
