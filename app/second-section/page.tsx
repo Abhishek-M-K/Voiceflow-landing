@@ -59,11 +59,12 @@ const SecondSection = () => {
         </div>
 
         <div className="grid grid-cols-1 p-4 md:grid md:grid-cols-3 gap-4 md:px-40">
-          {features.map((feature) => (
+          {features.map((feature, index) => (
             <div
               className="flex-col gap-y-6 border pb-10 rounded-xl p-8 
                 items-center justify-center w-full hover:scale-105 transform transition-all
                 duration-500 ease-in-out"
+              key={index}
             >
               <div className="text-gray-600 text-3xl font-bold">
                 <Image
