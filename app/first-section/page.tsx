@@ -25,7 +25,7 @@ const FirstSection = () => {
         </p>
 
         <div className="pt-10 w-full">
-          <video className="rounded-xl" muted loop autoPlay>
+          <video className="rounded-xl" muted loop autoPlay playsInline>
             <source src="/content/hero-video.mp4" type="video/mp4" />
           </video>
         </div>
