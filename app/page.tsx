@@ -5,6 +5,7 @@ import SecondSection from "./second-section/page";
 import ThirdSection from "./third-section/page";
 import Pricing from "./pricing/page";
 import FourthSection from "./fourth-section/page";
+import Footer from "./footer/page";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ThirdSection />
       <Pricing />
       <FourthSection />
+      <Footer />
     </div>
   );
 }
